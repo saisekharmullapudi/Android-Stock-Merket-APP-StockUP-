@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/sky"
+        android:enabled="true"
+        android:shortcutDisabledMessage="@string/disabled_message_text"
+        android:shortcutLongLabel="@string/shortcut_long_text"
+        android:shortcutShortLabel="@string/shortcut_short_text">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.saisekhar.finalproject1.Markets"
+            android:targetPackage="com.example.saisekhar.finalproject1" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.5"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:weightSum="12"
+            android:orientation="vertical"
+            android:background="@drawable/new_login">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:elevation="40dp"
+                android:background="#111a23">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="100dp"
+                    android:gravity="center"
+                    android:text="Portfolio"
+                    android:textColor="#e8ebec"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Buying"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textColor="#e8ebec"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.5"
+                    android:textSize="22dp"
+                    android:textColor="#e8ebec"
+                    android:text="000.0000"
+                    android:gravity="center"
+                    android:id="@+id/portfolio_value"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Portfolio"
+                    android:gravity="center"
+                    android:textColor="#e8ebec"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.5"
+                    android:textSize="22dp"
+                    android:text="000.0000"
+                    android:textColor="#e8ebec"
+                    android:gravity="center"
+                    android:id="@+id/buying_power"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6">
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:weightSum="6"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Assets"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:elevation="100dp"
+                    android:textColor="#e8ebec"
+                    android:textStyle="bold"
+                    android:background="@drawable/assests_back"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.8">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recViewDetails"
+                    android:background="@drawable/trans_back"
+                    ></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

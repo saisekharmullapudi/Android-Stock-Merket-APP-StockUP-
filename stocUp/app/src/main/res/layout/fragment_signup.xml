@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignupFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@drawable/main_act_back">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#111a23"
+            android:id="@+id/toolbar"
+            app:titleTextColor="#7b9cc2"
+            android:elevation="20dp">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="32dp"
+                android:textColor="#e8ebec"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center" />
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/username_firstname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:ems="10"
+                android:hint="First Name"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+            <EditText
+                android:id="@+id/username_lastname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:ems="10"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#e8ebec"
+            android:textColorHint="#e8ebec"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="match_parent"
+            android:textColor="#e8ebec"
+            android:textColorHint="#e8ebec"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#e8ebec"
+            android:textColorHint="#e8ebec"
+            android:ems="10"
+            android:hint="ConfimPassword"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Data of Birth:"
+                android:layout_gravity="center"
+                android:textColor="#e8ebec"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:hint="MM/DD/YYYY"
+                android:inputType="date" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:inputType="phone"
+                android:paddingLeft="20dp" />
+            <EditText
+                android:id="@+id/SSN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="SSN"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:inputType="phone"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textColor="#e8ebec"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:id="@+id/address1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Take Photo ID:"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/cam"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="#3d526c"
+                android:gravity="center"
+                android:text="Camera"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:textSize="18dp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:text="Gallery"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:layout_gravity="center"
+                android:background="#3d526c"
+                android:gravity="center"
+                android:id="@+id/selectphoto_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/already_have_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:elevation="20dp"
+                android:text="BACK"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:background="#3d526c"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:elevation="20dp"
+                android:text="Register"
+                android:textColor="#e8ebec"
+                android:textColorHint="#e8ebec"
+                android:background="#3d526c"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

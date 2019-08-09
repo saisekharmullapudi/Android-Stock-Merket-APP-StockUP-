@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:background="@drawable/withdraw_money_back"
+    android:id="@+id/drag">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:id="@+id/toolbar"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/tool2"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Basics of Crypto-Currency Trading" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:duplicateParentState="true"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@drawable/withdraw_money_back"
+            android:duplicateParentState="true"
+            android:text="A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange that uses strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets. Crypto-currencies are a kind of alternative currency and digital currency (of which virtual currency is a subset). Cryptocurrencies use decentralized control as opposed to centralized digital currency and central banking systems."
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:duplicateParentState="true">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/withdraw_money_back"
+            android:duplicateParentState="true"
+            android:text="In 1983, the American cryptographer David Chaum conceived an anonymous cryptographic electronic money called ecash. Later, in 1995, he implemented it through Digicash, an early form of cryptographic electronic payments which required user software in order to withdraw notes from a bank and designate specific encrypted keys before it can be sent to a recipient. This allowed the digital currency to be untraceable by the issuing bank, the government, or any third party. The first decentralized cryptocurrency, bitcoin, was created in 2009 by pseudonymous developer Satoshi Nakamoto."
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:duplicateParentState="true">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="@drawable/withdraw_money_back"
+            android:duplicateParentState="true"
+            android:text="A beginner might prefer to trade cryptocurrency stocks on the stock market (GBTC is a trust that owns Bitcoin and sells shares of it; trading this avoids you having to trade cryptocurrency directly). The main Bitcoin stock here in 2018 is GBTC. Be aware that GBTC trades at a premium (meaning bitcoins are cheaper than buying shares of the GBTC trust), which isn’t ideal."
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:duplicateParentState="true">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/withdraw_money_back"
+            android:duplicateParentState="true"
+            android:text="A good first foray into cryptocurrency investing is the obvious, buying a major cryptocurrency like Bitcoin. After that, you’ll probably want to trade USD for crypto on an exchange like GDAX. Once you have done that, you could try trading BTC and ETH for other cryptocurrencies. Trading “crypto pairs” can be rewarding, but it is more complex and often more risky than just buying a single cryptocurrency as an investment."
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

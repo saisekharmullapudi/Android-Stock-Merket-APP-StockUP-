@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111a23"
+        android:id="@+id/toolbar"
+        android:elevation="20dp">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market Details"
+            android:textColor="#f5f6f7"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_movies"
+        android:layout_width ="match_parent"
+        android:layout_height ="0dp"
+        android:layout_weight="2"
+        android:background="#4b78a6"
+        app:tabGravity="fill"
+        app:tabTextColor="#f5f6f7"
+        app:tabSelectedTextColor="#111a23"
+        app:tabMode="fixed"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width ="match_parent"
+        android:layout_height ="0dp"
+        android:background="#b2f0f9e0"
+        android:layout_weight="18"
+        />
+
+</LinearLayout>

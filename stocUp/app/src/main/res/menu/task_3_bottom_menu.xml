@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/task_3_delete_bottom"
+        android:icon ="@drawable/ic_menu_delete"
+        app:showAsAction ="always"
+        app:itemIconTint ="#f18a8d"
+        android:title="bottom toolbar" />
+    <item
+        android:id="@+id/task_3_sortDate"
+        android:icon ="@drawable/ic_sort_date"
+        app:showAsAction ="always"
+        app:itemIconTint ="#f18a8d"
+        android:title="bottom toolbar" />
+
+</menu>

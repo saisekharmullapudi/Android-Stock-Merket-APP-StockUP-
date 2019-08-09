@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saisekhar.finalproject1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="StocUp"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:name="com.example.saisekhar.finalproject1.Myapp">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/title_activity_main"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Markets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Purchase"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseCrypto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sell"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BankingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".add_money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".help"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/title_activity_help"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".flipbook"
+            android:screenOrientation="portrait"></activity>
+
+        <!--<receiver android:name="com.example.saisekhar.finalproject1.mybraodcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+               <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+    -->
+    </application>
+
+</manifest>

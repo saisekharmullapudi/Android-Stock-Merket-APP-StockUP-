@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flipbook">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            app:flipDuration="900"
+            app:flipFrom="right"
+            app:flipType="horizontal">
+
+            <include layout="@layout/fragmentfliptostock"/>
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/cryptobasics"/>
+
+            <!-- Front Layout Goes Here -->
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="9"-->
+        <!--android:id="@+id/banking_container">-->
+        <!---->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

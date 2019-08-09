@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/portfolio"
+            android:icon="@drawable/ic_details"
+            android:iconTint="#111a23"
+            android:title="portfolio" />
+        <item
+            android:id="@+id/banking"
+            android:icon="@drawable/ic_account"
+            android:iconTint="#111a23"
+
+            android:title="Banking" />
+        <item
+            android:id="@+id/market"
+            android:icon="@drawable/ic_attach"
+            android:iconTint="#111a23"
+            android:title="Market" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help"
+            android:iconTint="#111a23"
+            android:title="Help" />
+        <item
+            android:id="@+id/flip"
+            android:icon="@drawable/ic_flip_black_24dp"
+            android:iconTint="#111a23"
+            android:title="Basics" />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/ic_cancel_b"
+            android:iconTint="#111a23"
+            android:title="Signout" />
+    </group>
+
+
+
+</menu>
